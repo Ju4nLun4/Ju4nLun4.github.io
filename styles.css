@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8f0; /* Fondo verde claro */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedor general */
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centrado del contenido */
+}
+
+/* Imagen de la escuela */
+.imagen-escuela {
+    width: 50%; /* Hace que la imagen ocupe todo el ancho */
+    border-radius: 10px;
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
+
+/* Estilo del botón "Volver al sitio" */
+.volver-sitio-btn {
+    background-color: #4CAF50; /* Verde claro */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block; /* Asegura que el botón se muestre en bloque debajo de la imagen */
+    margin: 10px auto; /* Centra el botón */
+}
+
+.volver-sitio-btn:hover {
+    background-color: #45a049; /* Verde oscuro al pasar el ratón */
+}
+
+/* Estilos de los demás elementos (formulario, títulos, etc.) */
+h1 {
+    color: #4CAF50; /* Verde */
+}
+
+h2 {
+    color: #3e8e41; /* Un verde más oscuro */
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos de las imágenes de los equipos */
+.imagenes-equipo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.equipo-imagen {
+    width: 28%;
+    border-radius: 8px;
+}

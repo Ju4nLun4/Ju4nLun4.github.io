@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="manifest" href="manifest.json">
+    <title>Inscripción a Equipos Deportivos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Imagen de la escuela -->
+        <img src="imagen_escuela.jpg" alt="Escuela UT Santa Catarina" class="imagen-escuela">
+
+        <!-- Botón "Volver al sitio" debajo de la imagen -->
+        <button id="volverSitioBtn" class="volver-sitio-btn">Volver al sitio</button>
+
+        <h1>Inscripción a Equipos Deportivos</h1>
+        <p>¡Regístrate para formar parte de nuestros equipos y participa en torneos nacionales y regionales!</p>
+        
+        <form id="inscripcionForm" method="POST" action="https://formspree.io/f/xwpkpalw" enctype="multipart/form-data">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo de contacto:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero" required>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <label for="deporte">Deporte:</label>
+            <select id="deporte" name="deporte" required>
+                <option value="futbol">Fútbol</option>
+                <option value="basquet">Básquet</option>
+                <option value="volley">Voleibol</option>
+            </select>
+
+            <label for="experiencia">¿Tienes experiencia en este deporte?</label>
+            <select id="experiencia" name="experiencia" required>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="descripcionExperiencia">Descripción de tu experiencia (opcional):</label>
+            <textarea id="descripcionExperiencia" name="descripcionExperiencia" rows="4" placeholder="Describe tu experiencia aquí..."></textarea>
+
+            <label for="grupo">Grupo:</label>
+            <input type="text" id="grupo" name="grupo" required>
+
+            <label for="video">Sube un video (opcional):</label>
+            <input type="file" id="video" name="video" accept="video/*">
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <h2>¿Quiénes somos?</h2>
+        <p>En la UT Santa Catarina, promovemos el deporte como una forma de desarrollar habilidades, trabajo en equipo y disciplina. Nuestro objetivo es ofrecer un espacio para que los estudiantes se integren, mejoren sus habilidades deportivas y representen a nuestra institución en competencias regionales y nacionales.</p>
+
+        <div class="imagenes-equipo">
+            <img src="imagen1.jpg" alt="Equipo 1" class="equipo-imagen">
+            <img src="imagen2.jpg" alt="Equipo 2" class="equipo-imagen">
+            <img src="imagen3.jpg" alt="Equipo 3" class="equipo-imagen">
+        </div>
+    </div>
+
+    <script>
+        // Redirige al sitio cuando se presiona el botón "Volver al sitio"
+        document.getElementById('volverSitioBtn').addEventListener('click', () => {
+            window.location.href = 'https://bystrak7.github.io/DeportesUTSC/';
+        });
+    </script>
+</body>
+</html>
